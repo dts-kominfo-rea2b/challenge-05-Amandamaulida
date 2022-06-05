@@ -6,8 +6,9 @@ const names = ["Halo", "Angel", "Nyoman", "Ketut", "Aisyah"];
 // "1. Nama"
 // "2. Nama"
 // ...
-const sorter = (names) => {
-  return names.sort() 
+const sorter = (names,operation) => {
+  let result = operation(names.sort())
+  return result
   };
 
 // TODO: Fungsi untuk mengurutkan array of string secara ascending
